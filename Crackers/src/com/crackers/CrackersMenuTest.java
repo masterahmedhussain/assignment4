@@ -7,16 +7,11 @@ public class CrackersMenuTest {
         // TODO Auto-generated method stub
 
         CrackersFactoryMenu crackersFactoryMenu = new CrackersFactoryMenu();
-        ArrayList crackersMenu = crackersFactoryMenu.getMenuItems();
+        ArrayList<Menu> menus = new ArrayList<Menu>();
+        menus.add(crackersFactoryMenu);
 
-
-        for (int i = 0; i < crackersMenu.size(); i++) {
-            CrackerItems menuItem = (CrackerItems)crackersMenu.get(i);
-            System.out.print(i);
-            System.out.println( ") NAME: " + menuItem.getName() + " ");
-            System.out.println( "PRICE: " + menuItem.getPrice() + "(price for 20 crackers)");
-            System.out.println(menuItem.getDescription());
-        }
+        Manager manager = new Manager(menus);
+		manager.printMenu();
 
 
     }

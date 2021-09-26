@@ -1,12 +1,12 @@
 package com.crackers;
 
-public class CrackerItems {
+public class MenuItem {
 
     String name;
     String description;
     double price;
 
-    public CrackerItems(String name, String description, double price) {
+    public MenuItem(String name, String description, double price) {
         this.name = name;
         this.description = description;
         this.price = price;
